@@ -14,10 +14,16 @@ for line in all_lines:
                 
         elif change_record[1] == 'EXAM': 
             identifier = change_record[2]
-            if identifier in patient_records.keys():
-                if identifier not in exams:
+            if change_record[3] not in exams:
+                if identifier in patient_records.keys():
                     patient_records[identifier][1].append(change_record[3])
                     exams.append(change_record[3])
+                    
+    elif change_record[0] == 'DELETE':
+        if 
+        
+        
+                    
                 
             
             
